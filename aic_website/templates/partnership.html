@@ -1,0 +1,163 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jimma institute of technology AI center</title>
+    <link href="{% static 'style_web.css' %}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+          <section class="header">
+        <nav>
+            <a href="index_web.html"><img src="{% static 'images/LOGO-AIC.png' %}"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+             <li><a href="{% url 'index_web' %}">HOME</a></li>
+             <li><a href="{% url 'about' %}">ABOUT</a></li>
+             <li><a href="{% url 'gallery' %}">GALLERY</a></li>
+             <li><a href="{% url 'blog' %}">BLOG</a></li>
+             <li><a href="{% url 'partnership' %}">PARTNERSHIP</a></li>
+             <li><a href="{% url 'projects' %}">PROJECTS</a></li>
+             <li><a href="{% url 'contact' %}">CONTACT</a></li>
+             
+                </ul>
+           </div>
+           <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+       
+   </section>
+      
+<section class="Contact-Us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                
+                <span>
+                    <h5>Jimma institiute of technology AI Center</h5>
+                    <blockquote>
+                    <><strong>Jimma University Artificial Center</strong>, we believe in the power of collaboration and the immense potential it holds for shaping a better future. We extend an invitation to visionary companies to join us in our journey towards advancing AI technology and benefiting communities worldwide.</blockquote>
+                    <br>
+                        <blockquote>
+                    <>By partnering with <strong>Jimma University Artificial Center</strong>, you become part of a dynamic ecosystem committed to driving innovation and making a positive impact.</blockquote>
+                    <br>
+                    <blockquote>
+                    One of our primary goals is to harness the power of AI to create solutions that address real-world problems and make a meaningful difference in people's lives. Through our partnerships, we aim to develop groundbreaking technologies that can revolutionize various industries, from healthcare and agriculture to transportation and education.
+                </blockquote>
+                <br>
+                    <blockquote>
+                        Furthermore, partnering with us not only allows you to stay at the forefront of AI advancements but also provides you with access to our state-of-the-art infrastructure, cutting-edge research, and a talented pool of students and faculty members. By collaborating with <strong>Jimma University Artificial Center</strong>, you gain a competitive edge and the opportunity to drive innovation within your own organization.
+                    </blockquote>
+                
+        
+                </span>
+            </div>
+            
+        </div>
+        <div class="contact-col">
+            <form action="{% url 'partnership_form' %}" method="post">
+                {% csrf_token %}
+                <h2>Please complete the following information for partnership</h2>
+                <br>
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert alert-success">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Email address" required>
+                <input type="text" name="subject" placeholder="Phone number" required>
+                <input type="text" name="company" placeholder="Company name" required>
+                <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                <button type="submit" class="hero-btn red-btn">Send Message</button>
+                
+                
+            </form>
+        </div>
+    </div>
+    </section>
+
+    <section class="boo">
+        <br>
+        <br>
+        <h4>ABOUT US</h4>
+        <section class="Contact-Us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>Artificial Intelligence Center at Jimma</h5>
+                            <p>Monday To Friday, 8:00 AM to 5:00 PM</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>+251911086178</h5>
+                            <p>Ethiopia, Jimma</p>
+                        </span>
+                    </div>
+                    
+                </div>
+              
+            </div>
+            </section>
+    </section>
+<script>
+
+    var navlinks = document.getElementById("navlinks");
+    function showmenu(){
+        navlinks.style.right = "0";
+    } 
+    function hidemenu(){
+        navlinks.style.right = "-260px";
+    } 
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <style>
+        
+
+        h2 {
+            color: #101111;
+        }
+        
+
+        strong {
+            color: #28a745;
+        }
+
+        blockquote {
+            border-left: 4px solid #6c757d;
+            padding-left: 15px;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    
+</body>
+
+</html>

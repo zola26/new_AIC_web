@@ -1,0 +1,167 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jimma institute of technology AI center</title>
+    <link href="{% static 'style_web.css' %}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+{% comment %}    <section class="sub-header">
+        <nav>
+            <a href="index_web.html"><img src="{% static 'images/LOGO-AIC.png' %}></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="{% url 'index_web' %}">HOME</a></li>
+                    <li><a href="{% url 'about' %}">ABOUT</a></li>
+                    <li><a href="{% url 'gallery' %}">GALLERY</a></li>
+                    <li><a href="{% url 'blog' %}">BLOG</a></li>
+                    <li><a href="{% url 'partnership' %}">PARTNERSHIP</a></li>
+                    <li><a href="{% url 'projects' %}">PROJECTS</a></li>
+                    <li><a href="{% url 'contact' %}">CONTACT</a></li>
+                </ul>
+           </div>
+           <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+       
+   </section> {% endcomment %}
+<section class="header">
+    <nav>
+        <a href="index_web.html"><img src="{% static 'images/LOGO-AIC.png' %}"></a>
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+            <li><a href="{% url 'index_web' %}">HOME</a></li>
+         <li><a href="{% url 'about' %}">ABOUT</a></li>
+         <li><a href="{% url 'gallery' %}">GALLERY</a></li>
+         <li><a href="{% url 'blog' %}">BLOG</a></li>
+         <li><a href="{% url 'partnership' %}">PARTNERSHIP</a></li>
+         <li><a href="{% url 'projects' %}">PROJECTS</a></li>
+         <li><a href="{% url 'contact' %}">CONTACT</a></li>
+         
+            </ul>
+       </div>
+       <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+   
+   </section>
+<section class="about-us">
+<div class="row">
+    <div class="about-col">
+        <h2>Jimma institute of technology AI center </h2>
+        <br>
+        <div>
+            <h2>Mission</h2>
+            <br>
+            <blockquote>The Artificial Intelligence Center at Jimma University Institute of Technology envisions becoming a leading hub for fostering<br/> innovation, research, and education in the field of Artificial Intelligence. Our aim is to create an environment that supports and encourages AI researchers and students to push the boundaries of knowledge and contribute to the advancement of AI technology.</blockquote>
+        </div>
+    </div>
+<div class="about-col">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXKnuAGpuNYQa9lWL7ncyFwf84Z73TAJtg7Q&usqp=CAU">
+</div>
+</div>
+<div class="row">
+    <div class="about-col">
+        
+        <div>
+            <h2>Vision</h2>
+            <br>
+            <blockquote>Our mission is to cultivate a vibrant and collaborative community of AI researchers and students within Jimma University Institute of Technology. We strive to provide a platform that nurtures creativity, fosters interdisciplinary research, and promotes the ethical and responsible use of AI technology. Through comprehensive support, cutting-edge resources, and mentorship, we aim to equip and empower individuals to excel in AI research, develop innovative solutions, and address real-world challenges. We are dedicated to playing an instrumental role in shaping the future of AI by producing highly skilled professionals and contributing to the global AI community through impactful research and collaborations.</blockquote>
+        </div>
+    </div>
+<div class="about-col">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKZxFjajsgPe0zHf55eUIGZZl43aQ8Wx-HkQ&usqp=CAU">
+</div>
+</div>
+<div class="row">
+    <div class="about-col">
+
+        <div>
+            <h2>Goal</h2>
+            <br>
+            <blockquote>The primary goals of the Artificial Intelligence Center at Jimma University Institute of Technology are centered around advancing the field of Artificial Intelligence in Ethiopia. The center aims to foster a dynamic and cooperative community among AI researchers and students. This involves creating an environment that stimulates interdisciplinary research, encourages creativity, and promotes the moral and responsible application of AI. The overarching goal is to shape the future of artificial intelligence by developing highly trained personnel and making significant contributions to the global AI community through impactful research and collaborative efforts.</blockquote>
+        </div>
+    </div>
+    <div class="about-col">
+        <img src="https://source.unsplash.com/featured/1280x720/?artificial-intelligence">
+    </div>
+</div>
+</section>
+
+<section class="boo">
+    <br>
+    <br>
+    <h4>ABOUT US</h4>
+    <section class="Contact-Us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Artificial Intelligence Center at Jimma</h5>
+                        <p>Monday To Friday, 8:00 AM to 5:00 PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+251911086178</h5>
+                        <p>Ethiopia, Jimma</p>
+                    </span>
+                </div>
+                
+            </div>
+          
+        </div>
+        </section>
+</section>
+<script>
+
+    var navlinks = document.getElementById("navlinks");
+    function showmenu(){
+        navlinks.style.right = "0";
+    } 
+    function hidemenu(){
+        navlinks.style.right = "-260px";
+    } 
+
+</script>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <style>
+        
+
+        h2 {
+            color: #101111;
+        }
+        
+
+        strong {
+            color: #28a745;
+        }
+
+        blockquote {
+            border-left: 4px solid #6c757d;
+            padding-left: 15px;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    

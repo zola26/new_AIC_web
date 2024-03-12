@@ -1,0 +1,273 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jimma institute of technology AI center</title>
+    <link href="{% static 'style_web.css' %}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+       <section class="header">
+        <nav>
+            <a href="index_web.html"><img src="{% static 'images/LOGO-AIC.png' %}"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+             <li><a href="{% url 'index_web' %}">HOME</a></li>
+             <li><a href="{% url 'about' %}">ABOUT</a></li>
+             <li><a href="{% url 'gallery' %}">GALLERY</a></li>
+             <li><a href="{% url 'blog' %}">BLOG</a></li>
+             <li><a href="{% url 'partnership' %}">PARTNERSHIP</a></li>
+             <li><a href="{% url 'projects' %}">PROJECTS</a></li>
+             <li><a href="{% url 'contact' %}">CONTACT</a></li>
+             
+                </ul>
+           </div>
+           <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+       
+   </section>
+<section class="campus">
+    <h1>Gallery</h1>
+    <div class="row">
+        <div class="campus-col">
+            <img src="{% static 'images/a.jpg' %}">
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'images/i.jpg' %}">
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'images/c.jpg' %}">
+ 
+        </div>
+    </div>
+    <div class="row">
+        <div class="campus-col">
+            <img src="{% static 'images/d.jpg' %}">
+            
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'images/e.jpg' %}">
+            
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'images/g.jpg' %}">
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="campus-col">
+            <img src="{% static 'images/2000.jpg' %}">
+            
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'images/ac.jpg' %}">
+            
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'images/b.jpg' %}">
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="campus-col">
+            <img src="{% static 'images/ab.jpg' %}">
+            
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'images/p.jpg' %}">
+          
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'images/ad.jpg' %}">
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="campus-col">
+            <img src="{% static 'images/j.jpg' %}">
+            
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'images/k.jpg' %}">
+           
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'images/l.jpg' %}">
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="campus-col">
+            <img src="{% static 'images/m.jpg' %}">
+            
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'images/n.jpg' %}">
+            
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'images/o.jpg' %}">
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="campus-col">
+            <img src="{% static 'images/2002.jpg' %}">
+            
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'images/q.jpg' %}">
+            
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'images/r.jpg' %}">
+           
+        </div>
+    </div>
+    <div class="row">
+        <div class="campus-col">
+            <img src="{% static 'images/s.jpg' %}">
+          
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'images/t.jpg' %}">
+           
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'images/u.jpg' %}">
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="campus-col">
+            <img src="{% static 'images/v.jpg' %}">
+            
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'images/w.jpg' %}">
+            
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'images/x.jpg' %}">
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="campus-col">
+            <img src="{% static 'images/y.jpg' %}">
+            
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'images/z.jpg' %}">
+            
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'images/22.jpg' %}">
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="campus-col">
+            <img src="{% static 'images/23.jpg' %}">
+            
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'images/24.jpg' %}">
+            
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'images/25.jpg' %}">
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="campus-col">
+            <img src="{% static 'images/26.jpg' %}">
+            
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'images/27.jpg' %}">
+            
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'images/28.jpg' %}">
+          
+        </div>
+    </div>
+    <div class="row">
+        <div class="campus-col">
+            <img src="{% static 'images/29.jpg' %}">
+            
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'images/33.jpg' %}">
+          
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'images/31.jpg' %}">
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="campus-col">
+            <img src="{% static 'images/32.jpg' %}">
+            
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'images/f.jpg' %}">
+            
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'images/h.jpg' %}">
+            
+        </div>
+    
+   
+    
+    </section>
+
+    <section class="boo">
+        <br>
+        <br>
+        <h4>ABOUT US</h4>
+        <section class="Contact-Us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>Artificial Intelligence Center at Jimma</h5>
+                            <p>Monday To Friday, 8:00 AM to 5:00 PM</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>+251911086178</h5>
+                            <p>Ethiopia, Jimma</p>
+                        </span>
+                    </div>
+                    
+                </div>
+              
+            </div>
+            </section>
+    </section>
+<script>
+
+    var navlinks = document.getElementById("navlinks");
+    function showmenu(){
+        navlinks.style.right = "0";
+    } 
+    function hidemenu(){
+        navlinks.style.right = "-260px";
+    } 
+
+</script>
+
+</body>
+</html>

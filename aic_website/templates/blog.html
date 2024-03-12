@@ -1,0 +1,132 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jimma institute of technology AI center</title>
+    <link href="{% static 'style_web.css' %}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+       <section class="header">
+        <nav>
+            <a href="index_web.html"><img src="{% static 'images/LOGO-AIC.png' %}"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+             <li><a href="{% url 'index_web' %}">HOME</a></li>
+             <li><a href="{% url 'about' %}">ABOUT</a></li>
+             <li><a href="{% url 'gallery' %}">GALLERY</a></li>
+             <li><a href="{% url 'blog' %}">BLOG</a></li>
+             <li><a href="{% url 'partnership' %}">PARTNERSHIP</a></li>
+             <li><a href="{% url 'projects' %}">PROJECTS</a></li>
+             <li><a href="{% url 'contact' %}">CONTACT</a></li>
+             
+                </ul>
+           </div>
+           <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+       
+   </section>
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <div>
+                <h2>Main Service</h2>
+                <br>
+                <blockquote>The main products and services offered by the AI Center revolve around supporting and empowering individuals interested in AI. <br> <br> The center provides a comprehensive range of services, including the creation of an interdisciplinary research environment, the provision of state-of-the-art resources, mentorship programs, and the organization of knowledge-sharing platforms. <br> <br> The focus is on promoting ethical and responsible AI applications. These offerings aim to enable individuals to excel in AI research, develop innovative solutions, and address real-world problems using AI technology.</blockquote>
+            </div>
+        </div>
+    <div class="about-col">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKZxFjajsgPe0zHf55eUIGZZl43aQ8Wx-HkQ&usqp=CAU">
+    </div>
+    </div>
+    
+    </section>
+      <section class="blog-content">
+      <div class="row">
+        <div class="blog-left">
+            <img src="https://source.unsplash.com/featured/1280x720/?artificial-intelligence">
+           
+
+                    <div class="comment-box">
+                        <h3>leave a comment</h3>
+                        <form class="comment-form">
+                            <input type="text" placeholder="Enter Name">
+                            <input type="email" placeholder="Enter Email">
+                            <textarea rows="5" placeholder="Your Comment"></textarea>
+                            <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                        </form>
+                    </div>
+
+        </div>
+        <div class="blog-right">
+            <h3>Developed By</h3>
+            <div>
+                <span>Yosef Delesa</span>
+                <span>ECE</span>
+            </div>
+            <br>
+            <div>
+                <span>Tewdros Asfaw </span>
+                <span>ECE</span>
+            </div>
+            <br>
+            <div>
+                <span>Zelalem Kibru </span>
+                <span>ECE</span>
+            </div>
+            <br>
+            <div>
+                <span>Temesgen Gezahegn</span>
+                <span>ECE</span>
+            </div>
+            
+        </div>
+      </div>
+      </section>
+  
+
+      <section class="boo">
+        <br>
+        <br>
+        <h4>ABOUT US</h4>
+        <section class="Contact-Us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>Artificial Intelligence Center at Jimma</h5>
+                            <p>Monday To Friday, 8:00 AM to 5:00 PM</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>+251911086178</h5>
+                            <p>Ethiopia, Jimma</p>
+                        </span>
+                    </div>
+                    
+                </div>
+              
+            </div>
+            </section>
+    </section>
+<script>
+
+    var navlinks = document.getElementById("navlinks");
+    function showmenu(){
+        navlinks.style.right = "0";
+    } 
+    function hidemenu(){
+        navlinks.style.right = "-260px";
+    } 
+
+</script>
+
+</body>
+</html>

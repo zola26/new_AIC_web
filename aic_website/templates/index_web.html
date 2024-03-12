@@ -1,0 +1,272 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jimma institute of technology AI center</title>
+{% comment %}     <link rel="stylesheet" href="style.css" /> {% endcomment %}
+    <link href="{% static 'style_web.css' %}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+   <section class="header">
+        <nav>
+            <a href="index_web.html"><img src="{% static 'images/LOGO-AIC.png' %}"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                   
+             <li><a href="{% url 'index_web' %}">HOME</a></li>
+             <li><a href="{% url 'about' %}">ABOUT</a></li>
+             <li><a href="{% url 'gallery' %}">GALLERY</a></li>
+             <li><a href="{% url 'blog' %}">BLOG</a></li>
+             <li><a href="{% url 'partnership' %}">PARTNERSHIP</a></li>
+             <li><a href="{% url 'projects' %}">PROJECTS</a></li>
+             <li><a href="{% url 'contact' %}">CONTACT</a></li>
+                </ul>
+           </div>
+           <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+       
+   </section>
+
+<section class="facilitiesblaa">
+<h1>Below are some of the works carried out at the AI Center</h1>
+<div class="row">
+    
+    <div class="facilitiesblaa-col">
+        <img src="{% static 'images/10.jpg' %}">
+        <h3>
+        Face Recognition Website
+        </h3>
+        <a href="http://facerecognition.deboengineering.com/">
+            <button type="submit" class="hero-btn red-btn">Read More</button></a>
+        </p>
+    </div>
+    <div class="facilitiesblaa-col">
+        <img src="{% static 'images/30.jpg' %}">
+        <h3>weather prediction website</h3>
+        <a href="https://weatherforecast.deboengineering.com/"><button type="submit" class="hero-btn red-btn">Read More</button></a>
+    </div>
+    <div class="facilitiesblaa-col">
+        <img src="{% static 'images/21.jpg' %}">
+        <h3>Login-Registaration</h3>
+        <a href="https://github.com/Joseph0243/login-signup"><button type="submit" class="hero-btn red-btn">Read More</button></a>
+    </div>
+</div>
+<div class="row">
+    <div class="facilitiesblaa-col">
+        <img src="{% static 'images/40.jpg' %}">
+        <h3>3D Website for AI Center</h3>
+        <a href="https://play.google.com/store/apps/details?id=com.deboengineering.calculator1_app"><button type="submit" class="hero-btn red-btn">Read More</button></a>
+    </div>
+    <div class="facilitiesblaa-col">
+        <img src="{% static 'images/35.jpg' %}" >
+        <h3>wether predict app</h3>
+        <a href="https://github.com/teddyasfaw/Weather_app-Flutter"><button type="submit" class="hero-btn red-btn">Read More</button></a>
+    </div>
+    <div class="facilitiesblaa-col">
+        <img src="{% static 'images/100.png' %}" >
+        <h3>charity website</h3>
+        <a href="https://github.com/Joseph0243/charity_website"><button type="submit" class="hero-btn red-btn">Read More</button></a>
+    </div>
+</div>
+<div class="row">
+    <div class="facilitiesblaa-col">
+        <img src="{% static 'images/60.jpg' %}">
+        <h3>CALCULATOR (ኳልኩሌተር)</h3>
+        <a href="https://play.google.com/store/apps/details?id=com.deboengineering.calculator1_app"><button type="submit" class="hero-btn red-btn">Read More</button></a>
+    </div>
+    {% comment %} <div class="facilitiesblaa-col">
+        <img src="{% static 'images/uuu.png' %}">
+        <h3>Agricultural chatGPT website</h3>
+        <a href="https://agrichat.deboengineering.com/"><button type="submit" class="hero-btn red-btn">Read More</button></a>
+    </div> {% endcomment %}
+    {% comment %} <div class="facilitiesblaa-col">
+        <img src="{% static 'images/oo.png' %}" >
+        <h3>Water resource Website</h3>
+        <a href="https://hydrologyandirrigationgroup.deboengineering.com/irrigation/"><button type="submit" class="hero-btn red-btn">Read More</button></a>
+    </div> {% endcomment %}
+    {% comment %} <div class="facilitiesblaa-col">
+        <img src="{% static 'images/nnnnnn.png' %}">
+        <h3>Agricultural chatGPT Telegram bot</h3>
+        <a href="@mertwa_bot"><button type="submit" class="hero-btn red-btn">Read More</button></a>
+    </div> {% endcomment %}
+</div>
+
+
+</section>
+<section class="cta">
+    <h1>Jimma institute of technology <br> AI center</h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+</section>
+    
+<section class="testimonials">
+    <h1>what our intern student says</h1>
+    <p>Comments from our intern students are written below  </p>
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="{% static 'images/user1.jpg' %}" >
+            <div>
+                <p>
+                    I am thankful for the mentorship and guidance I received during my internship at the AI center company.
+                </p>
+                <h3>Yosef Delesa</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="{% static 'images/user2.jpg' %}" >
+            <div>
+                <p>My time at the AI center company has been invaluable in shaping my future career in AI.
+                </p>
+                <h3>Tewdros Asfaw</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="{% static 'images/user3.jpg' %}" >
+            <div>
+                <p>
+                    The hands-on experience and exposure to cutting-edge technology at the AI center company has truly expanded my skill set and knowledge in the field of artificial intelligence
+                </p>
+                <h3>Zelalmem Kibru</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="{% static 'images/user4.jpg' %}" >
+            <div>
+                <p>The collaborative and innovative environment at the AI center company has inspired me to think outside the box and approach challenges with creativity and ingenuity.
+                </p>
+                <h3>Temesgen Gezahegn</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="{% static 'images/user5.jpg' %}" >
+            <div>
+                <p>
+                    The networking opportunities and connections I made during my internship at the AI center company have been instrumental in opening doors for future career prospects in the AI industry.
+                </p>
+                <h3>Tafa </h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="{% static 'images/y.jpg' %}" >
+            <div>
+                <p> The opportunity to work with multidisciplinary teams at the AI center company has given me a holistic view.
+                </p>
+                <h3>Mintesinot Mengesha</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="{% static 'images/user7.png' %}" >
+            <div>
+                <p>
+                    The real-world projects and problem-solving opportunities I had at the AI center company have given me a deeper understanding.
+                </p>
+                <h3>Mesfin Damtew</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="{% static 'images/m.jpg' %}" >
+            <div>
+                <p> The mentorship I received from senior professionals at the AI center company has been invaluable.
+                </p>
+                <h3>Milkiyas Tariku</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+        </div>
+    </div>
+    
+</section>
+<section class="boo">
+    <br>
+    <br>
+    <h4>ABOUT US</h4>
+    <section class="Contact-Us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Artificial Intelligence Center at Jimma</h5>
+                        <p>Monday To Friday, 8:00 AM to 5:00 PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+251911086178</h5>
+                        <p>Ethiopia, Jimma</p>
+                    </span>
+                </div>
+                
+            </div>
+          
+        </div>
+        </section>
+</section>
+
+<script>
+
+    var navlinks = document.getElementById("navlinks");
+    function showmenu(){
+        navlinks.style.right = "0";
+    } 
+    function hidemenu(){
+        navlinks.style.right = "-260px";
+    } 
+
+</script>
+
+</body>
+</html>
+
+
+
+
